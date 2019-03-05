@@ -1,0 +1,18 @@
+function Greet(props) {
+  return <h1>Hello, you are doing a great job learning React {props.name}</h1>;
+}
+
+function App() {
+  return (
+    <div>
+      <Greet name="Carmina" />
+      <Greet name="Brad" />
+      <Greet name="Declan" />
+    </div>
+  );
+}
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+);
