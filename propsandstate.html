@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>My First React app</title>
+    <title>Family Page</title>
   </head>
   <body>
 
@@ -30,8 +30,8 @@
          render() {
            return (
              <div>
-               <h1 style={{ display: this.state.hidden ? 'none': 'block'}}>{this.props.greeting} {this.props.name}!</h1>
-               <button onClick={() => this.toggleView()}>{this.state.hidden ? 'Show' : 'Hide'}</button>
+               <h1 style={{ display: this.state.hidden ? 'none': 'block'}}>{this.props.greeting} {this.props.name}.</h1>
+               <button onClick={() => this.toggleView()}>{this.state.hidden ? 'View': 'Disappear'}</button>
              </div>
            );
          }
@@ -39,8 +39,9 @@
 
        ReactDOM.render(
          <div>
-          <Greeting name="Tom" greeting="Hello"/>
-          <Greeting name="Bob" greeting="Hola"/>
+          <Greeting name="Carmina" greeting="Welcome,"/>
+          <Greeting name="Brad" greeting="Hey,"/>
+          <Greeting name="Declan" greeting="Hello,"/>
          </div>, document.getElementById('app')
        );
     </script>
